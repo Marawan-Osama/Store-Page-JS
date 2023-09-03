@@ -8,7 +8,7 @@ const start = async ()=>{
         await connectDB(process.env.MONGO_URI)
         await Product.deleteMany();
         await Product.create(products);
-        console.log('success');
+        console.log('Success');
         process.exit(0);
     }catch(err){
         console.log(err);
